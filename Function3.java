@@ -3,19 +3,19 @@
 
 
 
-public class Function1 extends Function {
+public class Function3 extends Function {
 
 	@Override
 	public double fnValue(double x) {
-		double aux = Math.pow(x, 2) - (8 * x) + 25;
+		double aux = Math.pow(x, 4) - Math.pow(x, 2) + 1;
 		if (x < 0.0)
 			return Double.NaN;
 		else
-			return (x/3) + 2 * Math.sqrt(aux);
+			return Math.sqrt(aux);
 	}
 
 	public String toString() {
-		return "(x/3) + 2 * sqrt(x^2 - (8 * x) + 25)";
+		return "sqrt(x^4 - x^2 + 1)";
 	}
 public String answerString(double optVal, double x, double y, double z){
 	return "x = " + String.valueOf(x) + "; y =" + String.valueOf(y) + "; optVal = " + String.valueOf(optVal);
