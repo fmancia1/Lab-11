@@ -21,7 +21,7 @@ public class OptimizerManager implements OptimizerManagerInterface {
 	 */
 	OptimizerManager() {
 		function1 = new Function1();
-		//function2 = new Function2();
+		function2 = new Function2();
 		//function3 = new Function3();
 	}
 
@@ -140,7 +140,7 @@ public class OptimizerManager implements OptimizerManagerInterface {
     public String toString() {
 		String rtnString = "";
 		rtnString+="1. "+function1.toString()+"\n";
-		//rtnString+="2. "+function2.toString()+"\n";
+		rtnString+="2. "+function2.toString()+"\n";
 		//rtnString+="3. "+function3.toString()+"\n";
 		return rtnString;
 	}
@@ -149,7 +149,7 @@ public class OptimizerManager implements OptimizerManagerInterface {
     	switch(choice) {
     	//public String answerString(double cost, double height, double radius)
 		case 1: return "1. "+function1.answerString(optVal, x, y, z)+"\n";
-		//case 2: return "2. "+function2.answerString(optVal, x, y, z)+"\n";
+		case 2: return "2. "+function2.answerString(optVal, x, y, z)+"\n";
 		//case 3: return "3. "+function3.answerString(optVal, x, y, z)+"\n";
 		default: return "wrong choice";
 		}
